@@ -1,0 +1,252 @@
+body {
+    background-color: black;
+    margin-bottom: 0px;
+    margin-top: 0rem;
+}
+header{
+    display: block;
+    width: 100%;
+}
+
+@keyframes inp {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+    
+}
+
+input{
+    display: none;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#enterText{
+    display: block;
+    /* margin: 20px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+}
+label{
+    border: 2mm outset #C0C0C0;
+    display: block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: green;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label:active{
+    border: 2mm inset #1A2238;
+}
+canvas{
+    display: inline-block;
+    margin-left: -8px;
+}
+#TextOutput{
+    border: 2mm outset #C0C0C0;
+    display: block;
+    padding: 6px 12px;
+    cursor: text;
+    color: #FF6A3D;
+    background-color: whitesmoke;
+    margin-top: -7px;
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+.main-footer {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #010101;
+  }
+  
+  .main-footer ul {
+    list-style: none;
+  }
+  
+  .main-footer h1 {
+    font-size: 22px;
+    line-height: 117%;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .main-footer h2 {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .main-footer ul li a {
+    color: #ffffffcc;
+    text-decoration:none;
+  }
+  
+  footer {
+    background-color: #19302E;
+    border-top: 1px solid #6EB981;
+    font-size: 17px;
+    padding: 15px 5px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .logoinfo p {
+    color: #6EB981;
+    font-size: 17px;
+    margin-top: 5px;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-details li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .contact-details li a {
+    text-decoration:none;
+    color: #f1f1f1;
+  }
+  
+  .contact-details .fa {
+    color: #f1f1f1;
+    margin-right: 10px;
+  }
+  
+  .sociallogos{
+    padding:20px 0;
+  }
+  
+  .sociallogos .logobox a{
+    padding:0 10px;
+    text-decoration:none;
+    color:#ffffff;
+    font-size:22px;
+  }
+  
+  .com ul li{
+    padding:5px 0;
+    list-style: disc;
+  }
+  
+  @media only screen and (max-width: 749px) {
+    .main-footer {
+      padding:20px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+    }
+      .info{
+        padding:20px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-footer {
+      grid-template-columns: 1fr;
+    }
+    .sociallogos{
+      padding:20px 0;
+    }
+    .com{
+      padding:20px 0;
+    } 
+  
+  }
+h2{
+    margin: 0px;
+}
+.svg-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transform: translateX(380%);
+  }
+  
+  .svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+  }
+  
+  .svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+  }
+  
+  .svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+  }
+  
+  .svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+  }
+  
+  #out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+  }
+  
+  #inner3,
+  #inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  @keyframes rotate16 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.Home{
+    height: 80vh;
+    padding: 20px;
+}
+.line {
+    border: none;
+    border-top: 2px solid white;
+    width: 100%;
+    margin: 20px auto; 
+}
